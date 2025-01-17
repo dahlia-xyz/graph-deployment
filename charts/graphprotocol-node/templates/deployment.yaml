@@ -102,10 +102,12 @@ spec:
             httpGet:
               path: /
               port: metrics
+            initialDelaySeconds: 100
           readinessProbe:
             httpGet:
               path: /
               port: metrics
+            initialDelaySeconds: 100
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
