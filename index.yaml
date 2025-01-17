@@ -1,0 +1,136 @@
+apiVersion: v1
+entries:
+  graph-grafana-dashboards:
+  - apiVersion: v2
+    created: "2025-01-17T16:40:06.486172262Z"
+    description: A dumb helm chart to deploy grafana dashboard jsons
+    digest: 01b470301035966f2c84af95544749e512f170ead03a62234f04bd323b37e274
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graph-grafana-dashboards
+    type: application
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/graph-grafana-dashboards-0.1.0/graph-grafana-dashboards-0.1.0.tgz
+    version: 0.1.0
+  graphprotocol-indexer-agent:
+  - apiVersion: v2
+    appVersion: v0.17.0
+    created: "2025-01-17T16:40:06.702890156Z"
+    description: A Helm chart for Graph Protocol Indexer components
+    digest: fb8c740e43017ddf1aad50e0469a7a1f5996db114d7f6362b0fec6b6276c2b7d
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-indexer-agent
+    sources:
+    - https://github.com/graphprotocol/indexer
+    type: application
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/graphprotocol-indexer-agent-0.1.0/graphprotocol-indexer-agent-0.1.0.tgz
+    version: 0.1.0
+  graphprotocol-indexer-service:
+  - apiVersion: v2
+    appVersion: v0.17.0
+    created: "2025-01-17T16:40:06.855104821Z"
+    description: A Helm chart for Graph Protocol Indexer components
+    digest: 8d374b4e07859513c2833c38ab041a7deffc52eda5c2806caede7a13f1384dfc
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-indexer-service
+    sources:
+    - https://github.com/graphprotocol/indexer
+    type: application
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/graphprotocol-indexer-service-0.1.0/graphprotocol-indexer-service-0.1.0.tgz
+    version: 0.1.0
+  graphprotocol-node:
+  - apiVersion: v2
+    appVersion: v0.24.1
+    created: "2025-01-17T16:40:07.017928012Z"
+    description: A Helm chart for Graph Protocol Nodes
+    digest: bfc30f5380550b97600787bb0c316f787ccb9c883880e7d62534baf62e127f4c
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-node
+    sources:
+    - https://github.com/graphprotocol/graph-node
+    type: application
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/graphprotocol-node-0.1.0/graphprotocol-node-0.1.0.tgz
+    version: 0.1.0
+  ipfs:
+  - apiVersion: v1
+    appVersion: v0.9.1
+    created: "2025-01-17T16:40:07.189367731Z"
+    description: Helm chart for the Interplanetary File System
+    digest: c20394af0df58abba241d65c7f320928adf5ecd80897bc0af02c9f46b03ceb87
+    home: https://ipfs.io/
+    icon: https://raw.githubusercontent.com/ipfs/logo/master/raster-generated/ipfs-logo-128-ice-text.png
+    keywords:
+    - ipfs
+    - distributed-web
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: ipfs
+    sources:
+    - https://github.com/ipfs/go-ipfs
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/ipfs-0.4.5/ipfs-0.4.5.tgz
+    version: 0.4.5
+  kubedashboard-admin-sa:
+  - apiVersion: v2
+    created: "2025-01-17T16:40:07.350422987Z"
+    description: Dumb helm-chart to create admin service account to interact with
+      kube-dashboard
+    digest: eaed76fbc8ab1d538d667a73cb34aae2c3b07be0e17d756681a8a5453b4541f1
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: kubedashboard-admin-sa
+    type: application
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/kubedashboard-admin-sa-0.1.0/kubedashboard-admin-sa-0.1.0.tgz
+    version: 0.1.0
+  letsencrypt-prod-clusterissuer:
+  - apiVersion: v2
+    created: "2025-01-17T16:40:07.515201363Z"
+    description: Dumb helm-chart to create letsencrypt cluster issuer
+    digest: c7c4cb51fa168b53971e71076dd15d2dcecf0ebd27574b262106416d0d645018
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: letsencrypt-prod-clusterissuer
+    type: application
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/letsencrypt-prod-clusterissuer-0.1.0/letsencrypt-prod-clusterissuer-0.1.0.tgz
+    version: 0.1.0
+  postgres:
+  - apiVersion: v2
+    created: "2025-01-17T16:40:07.672450586Z"
+    description: A Helm chart for deploying Zolando postgres CRD to k8s.
+    digest: efdbbf301d4dda2d3791522f5c0b429e48503757fc838ed707c3e0b8f20ed72e
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-01-17T16:40:07.672470439Z"
