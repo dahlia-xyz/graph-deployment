@@ -77,10 +77,15 @@ postgres:
     #   key:
 
 # Custom environment variables
-# Custom environment variables
 customEnv: []
-#  - name: GRAPH_START_BLOCK
-#    value: "193075"
+#  - name: ETHEREUM_REORG_THRESHOLD
+#    value: "1"
+#  - name: ETHEREUM_ANCESTOR_COUNT
+#    value: "1"
+#  - name: ETHEREUM_POLLING_INTERVAL
+#    value: "1000"
+#  - name: GRAPH_ETHEREUM_CLEANUP_BLOCKS
+#    value: "true"
 #  - name: GRAPH_START_BLOCK
 #    valueFrom:
 #      secretKeyRef:
