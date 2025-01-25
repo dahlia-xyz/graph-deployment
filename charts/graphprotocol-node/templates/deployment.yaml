@@ -81,17 +81,17 @@ spec:
                   key: pgPass
                 {{- end }}
             {{- range .Values.customEnv }}
-              - name: {{ .name }}
-              {{- if .value }}
-                value: {{ .value | quote }}
-              {{- else if .valueFrom }}
-                valueFrom:
-                {{- if .valueFrom.secretKeyRef }}
-                  secretKeyRef:
-                    name: {{ .valueFrom.secretKeyRef.name }}
-                    key: {{ .valueFrom.secretKeyRef.key }}
-                {{- end }}
+            - name: {{ .name }}
+            {{- if .value }}
+              value: {{ .value | quote }}
+            {{- else if .valueFrom }}
+              valueFrom:
+              {{- if .valueFrom.secretKeyRef }}
+                secretKeyRef:
+                  name: {{ .valueFrom.secretKeyRef.name }}
+                  key: {{ .valueFrom.secretKeyRef.key }}
               {{- end }}
+            {{- end }}
             {{- end }}
           ports:
             - name: metrics
