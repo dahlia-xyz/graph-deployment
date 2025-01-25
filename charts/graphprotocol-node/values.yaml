@@ -76,6 +76,17 @@ postgres:
     #   name:
     #   key:
 
+# Custom environment variables
+# Custom environment variables
+customEnv: []
+#  - name: GRAPH_START_BLOCK
+#    value: "193075"
+#  - name: GRAPH_START_BLOCK
+#    valueFrom:
+#      secretKeyRef:
+#        name: subgraph-params
+#        key: GRAPH_START_BLOCK
+
 # Shouldn't have - sign, cause it would be replaced with _
 blockIngestorNodeId: index_node
 

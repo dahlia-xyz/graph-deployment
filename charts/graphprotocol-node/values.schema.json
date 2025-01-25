@@ -189,6 +189,53 @@
         }
       }
     },
+    "customEnv": {
+      "type": "array",
+      "description": "Custom environment variables to be added to the deployment",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the environment variable"
+          },
+          "value": {
+            "type": "string",
+            "description": "Value of the environment variable if directly specified"
+          },
+          "valueFrom": {
+            "type": "object",
+            "description": "Specifies a value from a source, such as a secret",
+            "properties": {
+              "secretKeyRef": {
+                "type": "object",
+                "description": "Reference to a key within a Kubernetes secret",
+                "required": ["name", "key"],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The name of the secret"
+                  },
+                  "key": {
+                    "type": "string",
+                    "description": "The key within the secret"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": ["name"],
+        "oneOf": [
+          {
+            "required": ["value"]
+          },
+          {
+            "required": ["valueFrom"]
+          }
+        ]
+      }
+    },
     "blockIngestorNodeId": {
       "type": "string",
       "description": "graphprotocol ingest node id"
