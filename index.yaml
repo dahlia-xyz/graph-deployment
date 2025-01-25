@@ -56,6 +56,25 @@ entries:
   graphprotocol-node:
   - apiVersion: v2
     appVersion: v0.24.1
+    created: "2025-01-25T13:57:33.424242632Z"
+    description: A Helm chart for Graph Protocol Nodes
+    digest: db41657d19215e6f7ae3b7f47c836156b79be47fa83b1fa85a43053bb6b27bf6
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-node
+    sources:
+    - https://github.com/graphprotocol/graph-node
+    type: application
+    urls:
+    - https://github.com/dahlia-xyz/graph-deployment/releases/download/graphprotocol-node-0.1.4/graphprotocol-node-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: v0.24.1
     created: "2025-01-25T13:45:58.438171174Z"
     description: A Helm chart for Graph Protocol Nodes
     digest: bf6043c86f7b0be86c0893389172dd61f9240378ece08ace1dcbf3d6979d376b
@@ -190,4 +209,4 @@ entries:
     urls:
     - https://github.com/dahlia-xyz/graph-deployment/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-25T13:45:58.438194357Z"
+generated: "2025-01-25T13:57:33.424261858Z"
